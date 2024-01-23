@@ -1,0 +1,77 @@
+﻿@model MyfirstBlackMetalAlbum.com.Models.Users
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Users</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PasswordHash)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PasswordHash)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RegistrationDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RegistrationDate)
+        </dd>
+    </dl>
+</div>
+
+
+ <h4>Profile Image</h4>
+    <form asp-action="UploadImage" asp-controller="Users" method="post" enctype="multipart/form-data">
+        <input type="file" name="imageFile" />
+        <input type="hidden" name="userId" value="@Model.UserIntId" />
+        <input type="submit" value="Upload" />
+    </form>
+    <!-- Display the current profile image if available -->
+    @if (Model.ProfileImage != null && Model.ProfileImage.Length > 0)
+    {
+        <img src="data:image;base64,@Convert.ToBase64String(Model.ProfileImage)" alt="Profile Image" />
+    }
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.UserIntId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+<!-- Progress bar section -->
+
+<div>
+    <h4>Progress Bar</h4>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: @Model.ProgressPercentage%">
+            @Model.ProgressPercentage% Complete <!-- Display the percentage --> 
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.UserIntId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.UserIntId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div> 

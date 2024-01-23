@@ -1,0 +1,221 @@
+﻿ @model UserCommentsViewModel
+ @using MyfirstBlackMetalAlbum.com.Helpers
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<style>
+    /* Add space below the Lesson header */
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    /* Center the video */
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+
+     /* Add space between paragraphs and the video */
+    p {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .download-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.download-box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.download-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+
+}
+
+.download-box li {
+    margin-bottom: 10px;
+
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-box {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Add border to the comment box */
+    padding: 10px; /* Add padding for better separation */
+    position: relative;
+
+}
+
+
+.comment-header {
+    font-weight: bold;
+}
+
+.comment-text {
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.thumbnail img {
+    width: 80px;
+    height: 80px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.username-box {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.username {
+    /* Styles for the username box */
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.comment-text {
+    margin-left: 10px; /* Adjust this value based on thumbnail width */
+    /* Other styles for comment text */
+}
+
+.comment-content {
+    width: 100%;
+}
+
+.comment-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #888; /* Adjust the color as needed */
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+
+</style>
+
+<h1>Lesson 1</h1>
+
+
+
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae justo eget magna fermentum iaculis eu non diam. In nibh mauris cursus mattis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Est sit amet facilisis magna etiam tempor orci eu. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Senectus et netus et malesuada fames ac. Ornare massa eget egestas purus viverra accumsan. Faucibus turpis in eu mi bibendum. Sit amet luctus venenatis lectus magna. Purus non enim praesent elementum facilisis leo vel fringilla. Gravida rutrum quisque non tellus. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Sed adipiscing diam donec adipiscing. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Congue nisi vitae suscipit tellus mauris a. Sed odio morbi quis commodo. Libero id faucibus nisl tincidunt eget.
+
+    Scelerisque in dictum non consectetur a erat nam at. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis. Bibendum est ultricies integer quis. Consectetur purus ut faucibus pulvinar elementum integer. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Purus sit amet volutpat consequat mauris nunc congue. Cursus eget nunc scelerisque viverra. Diam donec adipiscing tristique risus. Pretium nibh ipsum consequat nisl. Amet porttitor eget dolor morbi non arcu risus quis. Nunc consequat interdum varius sit amet. Euismod nisi porta lorem mollis. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Fermentum iaculis eu non diam phasellus. Suspendisse sed nisi lacus sed viverra. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Non odio euismod lacinia at quis risus sed. Ultricies integer quis auctor elit sed vulputate. Molestie a iaculis at erat pellentesque.
+
+    Et ligula ullamcorper malesuada proin libero nunc. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Eu mi bibendum neque egestas congue quisque egestas. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Urna et pharetra pharetra massa. Sodales ut etiam sit amet nisl purus in. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Cum sociis natoque penatibus et. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Vel fringilla est ullamcorper eget nulla facilisi etiam. Justo laoreet sit amet cursus sit amet dictum. Facilisis gravida neque convallis a cras semper auctor. Elementum integer enim neque volutpat ac tincidunt vitae semper. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Lacus vel facilisis volutpat est velit egestas. Arcu ac tortor dignissim convallis aenean et tortor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Tristique senectus et netus et.
+
+    
+</p>
+
+<iframe width="560" height="315" src="/path/to/your/video.mp4" frameborder="0" allowfullscreen></iframe>
+
+    <p> Pretium lectus quam id leo in vitae turpis massa sed. Sollicitudin nibh sit amet commodo nulla facilisi. Tristique risus nec feugiat in fermentum. In nisl nisi scelerisque eu. Est sit amet facilisis magna. Quis blandit turpis cursus in hac habitasse. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Quis commodo odio aenean sed adipiscing diam donec adipiscing. Aliquet lectus proin nibh nisl condimentum id venenatis. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Eget velit aliquet sagittis id consectetur. Sapien et ligula ullamcorper malesuada proin libero. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Scelerisque felis imperdiet proin fermentum leo. Sit amet porttitor eget dolor morbi non arcu. Lorem donec massa sapien faucibus et molestie ac. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Orci porta non pulvinar neque laoreet. Ipsum a arcu cursus vitae. Mi bibendum neque egestas congue.
+
+    Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Augue eget arcu dictum varius duis at consectetur. Orci dapibus ultrices in iaculis nunc sed. Interdum varius sit amet mattis. Semper viverra nam libero justo laoreet sit amet. Purus ut faucibus pulvinar elementum integer enim neque. Auctor elit sed vulputate mi sit amet mauris commodo. Semper feugiat nibh sed pulvinar proin gravida hendrerit. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Amet consectetur adipiscing elit ut aliquam purus sit amet.</p>
+
+    <div style="text-align: center;">
+
+    <img src="/path/to/your/image.jpg" alt="Image Description" style="margin-bottom: 100px; border: 2px solid #ccc; padding: 10px; margin: 0 auto;">
+
+    </div>
+
+    <div class="download-box" style="margin-top: 100px;">
+    <h2>Download Files</h2>
+    <ul>
+        <li><a href="/path/to/file1.pdf" download>File 1 (PDF)</a></li>
+        <li><a href="/path/to/file2.zip" download>File 2 (ZIP)</a></li>
+        <!-- Add more files as needed -->
+    </ul>
+</div>
+
+<!-- Add the completion button -->
+<form asp-action="CompleteLesson" asp-controller="Lessons">
+    <input type="hidden" asp-for="LessonId" value="5" /> <!-- Replace "1" with the appropriate LessonId -->
+    <button type="submit" class="btn btn-success">Mark Lesson as Completed</button>
+</form>
+
+ <!-- Progress bar to display the user's progress -->
+@{
+    var users = Model.Users; // Assuming the UserProgress property is available in the UserCommentsViewModel
+}
+@if (users != null)
+{
+    <div class="progress">
+       <div class="progress-bar" role="progressbar" style="width: @users.ProgressPercentage%">
+            @users.ProgressPercentage% Complete 
+        </div>
+    </div> 
+}
+<h2>Comments</h2>
+<div class="comment-section">
+    @if (Model.Comments != null && Model.Comments.Any())
+    {
+        @foreach (var comment in Model.Comments)
+        {
+            <div class="comment-box">
+                <div class="user-info">
+                    @if (comment.ProfilePicture != null && comment.ProfilePicture.Length > 0)
+                    {
+                        var resizedImage = ImageHelper.ResizeImage(comment.ProfilePicture, 80, 80, "png");
+                        var base64String = Convert.ToBase64String(resizedImage);
+                        <div class="thumbnail">
+                            <img src="data:image;base64,@base64String" alt="Profile Picture" />
+                        </div>
+                    }
+                    <div class="username-box">
+                        <strong>@comment.UserName</strong>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    @comment.Text
+                </div>
+                <div class="comment-footer">
+                    <span class="created-at">@comment.CreatedAt.ToString("yyyy-MM-dd HH:mm")</span>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No comments yet.</p>
+    }
+</div>
+
+
+
+
+
+
+
+<form asp-action="Create" asp-controller="UserComments">
+    <input type="hidden" asp-for="LessonId" value="1" /> <!-- Replace "1" with the appropriate LessonId -->
+    <div class="form-group">
+        <label asp-for="Text"></label>
+        <textarea asp-for="Text" class="form-control"></textarea>
+        <span asp-validation-for="Text" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Comment</button>
+</form>

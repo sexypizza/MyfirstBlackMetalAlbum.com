@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "Lessons";
+}
+
+<style>
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust as needed */
+    margin-left: 5%; /* Move the grid 30% to the right */
+}
+
+.phase-box {
+    flex: 0 0 calc(30% - 20px); /* Adjust box width */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.phase-box h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+</Style>
+
+
+<div class="container">
+    <h1>Lessons:</h1>
+    </div>
+
+    <div>
+        <div style="margin-left: 10%; padding-top: 20px; padding-bottom: 20px">
+   <h4>Total Progress</h4>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: @(ViewBag.ProgressPercentage)%">
+        @(ViewBag.ProgressPercentage)% Complete <!-- Display the percentage -->
+    </div>
+</div>
+</div>
+</div>
+
+
+
+    <div class="container">
+    <div class="phase-box">
+        <h2>Beginner</h2>
+         <div style="padding-top: 5px; padding-bottom: 5px;">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%;">
+                    83% Complete <!-- Placeholder text -->
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/Lessons/Phase1Lesson1">Lesson 1</a></li>
+            <li><a href="/Lessons/Phase1Lesson2">Lesson 2</a></li>
+            <li><a href="/Lessons/Phase1Lesson3">Lesson 3</a></li>
+            <li><a href="/Lessons/Phase1Lesson4">Lesson 4</a></li>
+
+            <!-- Add more lessons for Phase 1 as needed -->
+        </ul>
+    </div>
+
+    <div class="phase-box">
+        <h2>Intermediate</h2>
+         <div style="padding-top: 5px; padding-bottom: 5px;">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%;">
+                    @Model.IntermediateProgress%">
+                    @Model.IntermediateProgress% Complete <!-- Display the percentage --> 
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/Lessons/IntermediateLesson1">Lesson 1</a></li>
+            <li><a href="/Lessons/Intermediate/Lesson2">Lesson 2</a></li>
+            <!-- Add more lessons for Phase 2 as needed -->
+        </ul>
+    </div>
+
+   <div class="phase-box">
+        <h2>Advanced</h2>
+         <div style="padding-top: 5px; padding-bottom: 5px;">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%;">
+                    50% Complete <!-- Placeholder text -->
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/Lessons/Phase3Lesson1">Lesson 1</a></li>
+            <li><a href="/Lessons/Phase3Lesson2">Lesson 2</a></li>
+            <li><a href="/Lessons/Phase3Lesson3">Lesson 3</a></li>
+            <li><a href="/Lessons/Phase3Lesson4">Lesson 4</a></li>
+
+            <!-- Add more lessons for Phase 1 as needed -->
+        </ul>
+    </div>
+
+    <!-- Phase 4 -->
+    <div class="phase-box">
+        <h2>Recording</h2>
+         <div style="padding-top: 5px; padding-bottom: 5px;">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%;">
+                    30% Complete <!-- Placeholder text -->
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/Lessons/Phase4Lesson1">Lesson 1</a></li>
+            <li><a href="/Lessons/Phase4Lesson2">Lesson 2</a></li>
+            <li><a href="/Lessons/Phase4Lesson3">Lesson 3</a></li>
+            <li><a href="/Lessons/Phase4Lesson4">Lesson 4</a></li>
+
+            <!-- Add more lessons for Phase 1 as needed -->
+        </ul>
+    </div>
+</div>

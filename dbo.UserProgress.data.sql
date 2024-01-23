@@ -1,0 +1,2 @@
+﻿ALTER TABLE UserProgress
+ADD UserProgressId INT IDENTITY(1,1) PRIMARY KEY;
